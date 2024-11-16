@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>간단한 웹앱</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+        }
+        main {
+            padding: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>간단한 웹앱</h1>
+    </header>
+    <main>
+        <h2>환영합니다!</h2>
+        <p>이것은 간단한 웹 애플리케이션의 예시입니다.</p>
+        <button onclick="displayMessage()">클릭하세요</button>
+        <p id="message"></p>
+    </main>
+    <script>
+        function displayMessage() {
+            document.getElementById('message').textContent = "버튼이 클릭되었습니다!";
+        }
+    </script>
+</body>
+</html>
